@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ping Pong Game</title>
+  <!-- Add the Bootstrap CSS file -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+ <!-- Linked the css file -->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container"><br>
+    <h1>Ping Pong Game </h1>
+    <canvas id="canvas" class="bg-dark mt-4 " width="600" height="400"></canvas>
+
+    <div class="row justify-content-center mt-4">
+      <button id="start-btn" class="btn btn-primary mx-2">Start</button>
+      <button id="pause-btn" class="btn btn-primary mx-2">Pause</button>
+      <button id="restart-btn" class="btn btn-primary mx-2">Restart</button>
+
+  </div>
+</div>
+ <p class="control">Control: Player Left(W and S) | Player Right(↑ and ↓)</p>
+  <!-- Toast notification for Winner-->
+<div class="modal" tabindex="-1" role="dialog" id="message-modal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <h5 id="message"></h5>
+      </div>
+      <div class="modal-footer">
+        <button type="button" id="message-modal-close" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
